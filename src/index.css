@@ -1,0 +1,111 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.K {
+    animation: K 1s ease-in-out infinite;
+}
+
+@keyframes K {
+    0% {
+        opacity: 0.5;
+        scale: 1.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.E{
+    animation: E 1s ease-in-out infinite;
+}
+
+@keyframes E {
+    0% {
+        opacity: 0.5;
+      }
+      50% {
+        opacity: 1;
+        scale: 1.1;
+      }
+      100% {
+        opacity: 0.5;
+      }
+}
+
+.A {
+    animation: A 1s infinite;
+}
+
+  
+  @keyframes A {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+      scale: 1.1;
+    }
+  }
+
+
+.fadeIn {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.animate {
+  animation: fadeOut 1s ease-in-out;
+  animation-fill-mode: forwards;
+  transition: all 3s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate_fade {
+  animation: fadeX 1s ease-in-out;
+  animation-fill-mode: forwards;
+  transition: all 3s;
+}
+
+@keyframes fadeX {
+  0% {
+    opacity: 0.5;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
